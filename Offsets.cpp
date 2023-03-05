@@ -1,18 +1,18 @@
-//season 16 14/02/23
+//season 16 1/03/23
 //ToggleBot
-//https://pastebin.com/NYrSiuM2
+//https://pastebin.com/WdsTEEHy
 #pragma once
 namespace offsets
 {
     // buttons
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    const long IN_ATTACK = 0x076780e8; // [Buttons] -> in_attack
+    const long IN_ATTACK = 0x076782c8; // [Buttons] -> in_attack
     // core
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     const long REGION = 0x140000000;     // [Mine]          -> Region
-    const long LEVEL = 0x1462460;        // [Miscellaneous] -> LevelName
-    const long LOCAL_PLAYER = (0x01ee8b70 + 0x8); // [Miscellaneous] -> LocalPlayer AVC_GameMovement 
-    const long ENTITY_LIST = 0x1b37938;  // [Miscellaneous] -> cl_entitylist
+    const long LEVEL = 0x1462450;        // [Miscellaneous] -> LevelName
+    const long LOCAL_PLAYER = (0x01ee8cb0 + 0x8); // [Miscellaneous] -> LocalPlayer AVC_GameMovement 
+    const long ENTITY_LIST = 0x1b37a78;  // [Miscellaneous] -> cl_entitylist
     // entity
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     const long LOCAL_ORIGIN = 0x0158; // [DataMap.CBaseViewModel]    -> m_localOrigin
