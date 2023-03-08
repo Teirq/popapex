@@ -1,18 +1,18 @@
-//season 16 1/03/23
+//season 16 07/03/23
 //ToggleBot
-//https://pastebin.com/WdsTEEHy
+//https://pastebin.com/mkJxaGuW
 #pragma once
 namespace offsets
 {
     // buttons
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    const long IN_ATTACK = 0x076782c8; // [Buttons] -> in_attack
+    const long IN_ATTACK = 0x07678368; // [Buttons] -> in_attack
     // core
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     const long REGION = 0x140000000;     // [Mine]          -> Region
     const long LEVEL = 0x1462450;        // [Miscellaneous] -> LevelName
-    const long LOCAL_PLAYER = (0x01ee8cb0 + 0x8); // [Miscellaneous] -> LocalPlayer AVC_GameMovement 
-    const long ENTITY_LIST = 0x1b37a78;  // [Miscellaneous] -> cl_entitylist
+    const long LOCAL_PLAYER = (0x01ee8d50 + 0x8); // [Miscellaneous] -> LocalPlayer AVC_GameMovement  + 0x8
+    const long ENTITY_LIST = 0x1b37b18;  // [Miscellaneous] -> cl_entitylist
     // entity
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     const long LOCAL_ORIGIN = 0x0158; // [DataMap.CBaseViewModel]    -> m_localOrigin
@@ -20,7 +20,7 @@ namespace offsets
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     const long GLOW_ENABLE = (0x03c0 + 0x8);        // [RecvTable.DT_HighlightSettings] -> m_highlightServerContextID + 0x8
     const long GLOW_THROUGH_WALL = (0x03c0 + 0x10); // [RecvTable.DT_HighlightSettings] -> m_highlightServerContextID + 0x10
-    //const long GLOW_COLOR = 0x1d0;                  // [Miscellaneous] -> glow_color (use only if updated from main repo)
+    //const long GLOW_COLOR = 0x1d0;                // [Miscellaneous] -> glow_color (use only if updated from main repo)
     const long TEAM_NUMBER = 0x044c;                // [RecvTable.DT_BaseEntity]        -> m_iTeamNum
     const long NAME = 0x0589;                       // [RecvTable.DT_BaseEntity]        -> m_iName
     const long LIFE_STATE = 0x0798;                 // [RecvTable.DT_Player]            -> m_lifeState
@@ -29,4 +29,5 @@ namespace offsets
     const long BLEEDOUT_STATE = 0x2740;             // [RecvTable.DT_Player]            -> m_bleedoutState
     const long ZOOMING = 0x1c51;                    // [RecvTable.DT_Player]            -> m_bZooming
     const long LAST_VISIBLE_TIME = 0x1A78;          // [Miscellaneous]                  -> CPlayer!lastVisibleTime  1st offset from dump
+    //const long CURRENT_SHIELDS = 0x0170;          // m_shieldHealth  (use only if updated from main repo)
 }
