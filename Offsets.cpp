@@ -1,18 +1,18 @@
-//season 16 07/03/23
+//season 16 03/04/23
 //ToggleBot
-//https://pastebin.com/mkJxaGuW
+//https://pastebin.com/raw/2kDDf1NW
 #pragma once
 namespace offsets
 {
     // buttons
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    const long IN_ATTACK = 0x07678368; // [Buttons] -> in_attack
+    const long IN_ATTACK = 0x07872cf0; // [Buttons] -> in_attack
     // core
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     const long REGION = 0x140000000;     // [Mine]          -> Region
-    const long LEVEL = 0x1462450;        // [Miscellaneous] -> LevelName
-    const long LOCAL_PLAYER = (0x01ee8d50 + 0x8); // [Miscellaneous] -> LocalPlayer AVC_GameMovement  + 0x8
-    const long ENTITY_LIST = 0x1b37b18;  // [Miscellaneous] -> cl_entitylist
+    const long LEVEL = 0x163a9e0;        // [Miscellaneous] -> LevelName
+    const long LOCAL_PLAYER = (0x020c21d0 + 0x8); // [Miscellaneous] -> LocalPlayer AVC_GameMovement  + 0x8
+    const long ENTITY_LIST = 0x1d10ef8;  // [Miscellaneous] -> cl_entitylist
     // entity
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     const long LOCAL_ORIGIN = 0x0158; // [DataMap.CBaseViewModel]    -> m_localOrigin
@@ -30,4 +30,4 @@ namespace offsets
     const long ZOOMING = 0x1c51;                    // [RecvTable.DT_Player]            -> m_bZooming
     const long LAST_VISIBLE_TIME = 0x1A78;          // [Miscellaneous]                  -> CPlayer!lastVisibleTime  1st offset from dump
     //const long CURRENT_SHIELDS = 0x0170;          // m_shieldHealth  (use only if updated from main repo)
-}
+    }
