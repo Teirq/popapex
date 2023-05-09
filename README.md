@@ -1,4 +1,4 @@
-# MyApex
+# popapex
 Simple C++ cheats for Apex Legends (Linux Steam version).
 
 ### Sense 
