@@ -24,7 +24,7 @@ You can hold left shift to temporarily disable.
 
 1.ターミナルを開き、以下を実行してチートソースコードをダウンロードします
 
-git clone https://github.com/ximbot/myapex
+git clone https://github.com/Teirq/popapex
 
 
 ２．ダウンロードしたフォルダに移動します
