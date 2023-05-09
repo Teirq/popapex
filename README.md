@@ -20,33 +20,28 @@ You can hold left shift to temporarily disable.
 2. g++ compiler (Ubuntu 11.2.0-19ubuntu1) 11.2.0 or higher)
 3. Git
 
-### HOW TO SETUP & RUN
+セットアップと実行方法
 
-1. Open terminal and run the following to download the cheat source code
+1.ターミナルを開き、以下を実行してチートソースコードをダウンロードします
 
-```
 git clone https://github.com/ximbot/myapex
-```
 
-2. Go inside the downloaded folder
 
-```
+２．ダウンロードしたフォルダに移動します
+
 cd myapex
-```
 
-3. Compile the code 
 
-```
+３．コードをコンパイルする
+
 g++ Main.cpp -lX11
-```
 
-4. Go to your Steam and run Apex Legends
 
-5. Run the cheat (requires sudo access for read & write memory)
+４．Steam に移動し、Apex Legends を実行します
 
-```
+5.チートを実行します（メモリの読み取りと書き込みにはsudoアクセスが必要です）
+
 sudo ./a.out
-```
 
 You should now see a lot of lines being printed saying "LOOP OK...." which means the cheat is running fine. Enjoy.
 
